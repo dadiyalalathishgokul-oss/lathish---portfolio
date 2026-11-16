@@ -377,9 +377,9 @@ function generateBuildPy(options: GeneratorOptions): string {
     : '';
   const auditStep = options.includeSeoAudit
     ? `
-    if profile.site_url:
+    if PORTFOLIO.site_url:
         sitemap_path = output_dir / "sitemap.xml"
-        sitemap_path.write_text(build_sitemap_xml(profile.site_url), encoding="utf-8")
+        sitemap_path.write_text(build_sitemap_xml(PORTFOLIO.site_url), encoding="utf-8")
 
     warnings = audit_rendered_html(rendered)
     for warning in warnings:
