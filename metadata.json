@@ -1,0 +1,6 @@
+{
+  "name": "Portfolio Python Migrator",
+  "description": "Convert a single-file HTML portfolio into a Python static site generator with live GitHub Linguist language breakdown and Netlify deployment bundle.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
