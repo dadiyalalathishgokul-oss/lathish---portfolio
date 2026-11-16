@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>$page_title</title>
+    <meta name="description" content="$meta_description" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700;800&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    $json_ld_block
+  </head>
+  <body>
+    <main>
+      <header>
+        <h1>$name</h1>
+        <p class="lead">$headline</p>
+        <div class="meta">
+          <span>$location</span>
+          <a href="mailto:$email">$email</a>
+        </div>
+      </header>
+
+      <section>
+        <h2>About me</h2>
+        <div>
+          <p>$about</p>
+        </div>
+      </section>
+
+      <section>
+        <h2>Education</h2>
+        <div>
+          <p><strong>$institution</strong><br />$degree</p>
+          <div class="bars" role="img" aria-label="$grades_aria_label">
+            $grades_html
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2>Skills</h2>
+        <ul>
+          $skills_html
+        </ul>
+      </section>
+
+      <section>
+        <h2>Projects</h2>
+        <div>
+          $projects_html
+        </div>
+      </section>
+
+      <section>
+        <h2>Certifications</h2>
+        <div>
+          <p><strong>$certification_title</strong><br />$certification_dates</p>
+        </div>
+      </section>
+
+      <section>
+        <h2>Contact</h2>
+        <div>
+          <p>$contact_text <a href="mailto:$email">Email me</a>.</p>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
